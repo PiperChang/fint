@@ -10,7 +10,7 @@ const InvestmentAccountList = () => {
   const columns = useMemo(
     () => [
       { accessor: "", Header: "고객명" },
-      { accessor: "broker_name", Header: "브로커명" },
+      { accessor: "broker_name", Header: "브로커명", cell: ""},
       { accessor: "number", Header: "계좌번호" },
       { accessor: "status", Header: "계좌상태" },
       { accessor: "name", Header: "계좌명" },
