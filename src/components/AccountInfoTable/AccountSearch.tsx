@@ -1,6 +1,6 @@
 import React from "react";
 
-const AccountFilter = ({ onSubmit }) => {
+const AccountSearch = ({ onSubmit }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmit(event.target.elements.filter.value);
@@ -14,4 +14,4 @@ const AccountFilter = ({ onSubmit }) => {
   );
 };
 
-export default AccountFilter;
+export default AccountSearch;

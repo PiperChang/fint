@@ -5,7 +5,7 @@ import handleGetAccounts from "./api/handleQueryAccountList";
 import { AccountType } from "./InvestmentAccountTypes";
 
 const InvestmentAccountList = () => {
-  const { data, isLoading } = handleGetAccounts();
+  const { data, isLoading } = handleGetAccounts();  
   
   const columns = useMemo(
     () => [
@@ -25,10 +25,6 @@ const InvestmentAccountList = () => {
   return (
     <div>
       <AccountInfoTable columns={columns} data={data} />
-      {/* {!isLoading &&
-        data.map((account: AccountType, index: string) => {
-          return <AccountInfoBox key={"Account" + index} account={account} />;
-        })} */}
     </div>
   );
 };
