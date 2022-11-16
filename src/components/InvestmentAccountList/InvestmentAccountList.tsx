@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import AccountInfoBox from "./AccountInfoBox";
-import AccountInfoTable from "../AccountInfoTable/AccountInfoTable";
+import AccountInfoTable from "./AccountInfoTable/AccountInfoTable";
 import handleGetAccounts from "./api/handleQueryAccountList";
 import { AccountType } from "./InvestmentAccountTypes";
 

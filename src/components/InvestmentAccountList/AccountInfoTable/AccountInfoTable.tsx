@@ -18,7 +18,7 @@ import {
   TableRow,
   Paper,
 } from "@mui/material";
-import { matchSorterFn } from "../InvestmentAccountList/utils/filtering";
+import { matchSorterFn } from "../utils/filtering";
 import Pagination from "./Pagination";
 import PageButtons from "./PageButtons";
 

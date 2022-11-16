@@ -5,6 +5,7 @@ import Users from './pages/Users/Users';
 import RequireAuth from './utils/auth/RequireAuth';
 import ROUTES from './constants/routes';
 import NotFound from './pages/NotFound/NotFound';
+import UserDetail from './pages/UserDetail';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         >
           <Route path={ROUTES.ACCOUNTS} element={<InvestmentAccounts />} />
           <Route path={ROUTES.USERS} element={<Users />} />
+          <Route path={`${ROUTES.USER_DETAIL}/:userId`} element={<UserDetail />} />
         </Route>
         <Route path={ROUTES.NOT_FOUND} element={<NotFound />} />
         <Route
